@@ -1,0 +1,10 @@
+1. geth --datadir data0 init genesis.json
+2. geth --datadir data0 --networkid 10 --port 30301 --rpc --rpcport 8486 console 2>>123.log
+3. geth --datadir data0 --networkid 10  --rpc --rpccorsdomain "*" --port 30301 --rpcport 8486 --rpcapi "db,eth,net,web3,personal" --rpcaddr "127.0.0.1" console 2>>123.log
+geth --datadir data0 --networkid 10  --rpc --rpccorsdomain "*" --port 30301 --rpcport 8486 --rpcapi "db,eth,net,web3,personal" --rpcaddr "192.168.124.2" console 2>>123.log
+
+
+
+
+
+geth --datadir data0 --networkid 10  --rpc --rpccorsdomain "*" --port 30303 --rpcport 8485 --rpcapi "db,eth,net,web3,personal" --rpcaddr "192.168.124.2" --ipcdisable console 2>>123.log
